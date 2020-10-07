@@ -1,0 +1,313 @@
+body {
+    font-family: 'Ruda', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+p {
+font-size: 20px;
+}
+li {
+    list-style: none;
+    margin-right: 10px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.lista-menu { display: flex;
+    background: none;
+}
+.titular {
+    text-align: center;
+    margin-top: 200px;
+}
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+
+}
+a.navegacion {
+text-decoration: none;
+color: black;
+}
+header {
+    background: url(rasengan.png);
+    height: 100vh;
+    background-size: cover ;
+}
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+/*biografia*/
+a.Shippuden {
+    font-size: 14px;
+    background: #417BA3;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+    color: white;
+}
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+.contenedor-biografia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.contenedor-parrafo {
+    width: 42%;
+}
+.parrafo-final {
+    margin-bottom: 30px;
+}
+/*cercanos*/
+.madre-cercanos {
+    background: #16551F ;
+}
+.cercanos-naruto {
+margin: 10px;
+background-image: url(kabuto-card.png);
+}
+.cercanos-naruto h3{
+background:#EEF0D0 ;
+padding: 0;
+margin: 0px 380px 0px 380px;
+border-style: solid;
+border-color:  #16551F;
+}
+.contenedor-cercanos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cercano {
+    width: 25%;
+    padding: 30px 30px 30px 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background:#EEF0D0;
+    border-style: solid;
+    border-color:  #16551F;
+    border-radius: 1%;
+    box-shadow: 10px 10px 10px 0px;
+}
+.cercano h4 {
+    font-size: 30px;
+    margin: 0;
+}
+.cercano img {
+    margin-top: 40%;
+    margin-left: 110px;
+    margin-bottom: 5px;
+}
+.cercano p {
+    font-size: 18px;
+    height: 200px;
+}
+.cercano:hover {
+   transform: scale(1.1);
+}
+/*carousel*/
+.contenedor-all {
+    width: 210px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+margin-top: 50px;
+margin-bottom: 400px;
+}
+
+.contenedor-all h3 {
+    margin-top: 100px;
+}
+.contenedor-carrousel {
+    width: 90%;
+    position: absolute;
+    animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
+    margin-bottom: 360px;
+    padding-bottom: 100px;
+
+}
+.contenedor-carrousel figure {
+    width: 100%;
+    width: 190px;
+    height: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px #04E7F9 ;
+    transition: all 300ms;
+}
+
+.contenedor-carrousel figure:hover {
+box-shadow: 0px 0px 20px 0px #DF3508;
+transition: all 300ms;
+}
+.contenedor-carrousel:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+
+
+.contenedor-carrousel figure:nth-child(1){transform: rotateY(36deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(2){transform: rotateY(72deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(3){transform: rotateY(108deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(4){transform: rotateY(144deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(5){transform: rotateY(180deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(6){transform: rotateY(216deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(7){transform: rotateY(252deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(8){transform: rotateY(288deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(9){transform: rotateY(324deg) translateZ(300px);}
+.contenedor-carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+
+
+.contenedor-carrousel img {
+    width: 100%;
+}
+.contenedor-carrousel img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar {
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);}
+}
+
+/*examenes*/
+#examenes {
+    background: #f9fafc;
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+#examenes h3 {
+    margin-top: 3px;
+}
+.contenedor-examenes {
+    display:flex;
+    justify-content: space-around;
+}
+.primer-contenedor-exam {
+    margin-bottom: 50px;
+}
+.examen {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    padding-bottom: 20px;
+}
+#examenes img {
+    width: 100%;
+}
+#examenes h4 {
+    font-size: 23px;
+    margin: 0;
+    padding: 20px;
+}
+#examenes p {
+    line-height: 24px;
+    font-size: 16px;
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+.sub {
+    font-weight: bold;
+}
+/*icono*/
+#icono {
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+}
+
+/*responsive*/
+@media (max-width:480px) {
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #417BA3;
+        width: 100%;
+    }
+    nav .lista-menu {
+        flex-direction: column;
+    }
+.menu-menu {
+    display: block;
+    width: 25px;
+}
+.titular {
+    margin-top: 100px;
+}
+h1 {
+    font-size: 49px;
+}
+h2 {
+    font-size: 19px;
+}
+.contenedor-biografia {
+    flex-direction: column;
+}
+.contenedor-parrafo {
+    width: 90%;
+}
+.imagen-bio {
+    width: 90%;
+}
+.contenedor-cercanos {
+    flex-direction: column;
+}
+.cercano {
+    width: 70%;
+    padding: 15px 25px;
+    margin: auto;
+margin-bottom: 15px;
+}
+.cercano p {
+width: 100%;
+height: 50%;
+margin-bottom: 5px;
+padding: 0;
+}
+.cercano img {
+margin: 0px 110px !important;
+}
+h3 {
+    font-size: 33px;
+    margin: auto;
+}
+.contenedor-cercanos {
+padding-bottom: 50px;
+}
+.cercanos-naruto h3 {
+    margin: 0px 35px 30px 35px;
+}
+.contenedor-all h3 {
+  font-size: 45px;
+}
+.contenedor-examenes {
+    flex-direction: column;
+}
+.examen {
+    width: 85%;
+    margin: auto;
+}
+header {
+    background: url(fond-celular.jpg);
+ background-size: cover;
+}
+}
+
